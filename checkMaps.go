@@ -4,18 +4,18 @@ import (
 	"reflect"
 )
 
-func MapsCheck(map1, map2 map[string]string) bool {
-	if len(map1) != len(map2) {
-		return true
-	}
-	for key, val1 := range map1 {
-		val2, ok := map2[key]
-		if !ok || val1 != val2 {
-			return true
-		}
-	}
-	return false
-}
+// func MapsCheck(map1, map2 map[string]string) bool {
+// 	if len(map1) != len(map2) {
+// 		return true
+// 	}
+// 	for key, val1 := range map1 {
+// 		val2, ok := map2[key]
+// 		if !ok || val1 != val2 {
+// 			return true
+// 		}
+// 	}
+// 	return false
+// }
 
 /*
 CompareMaps receives two maps that must be of the same 
