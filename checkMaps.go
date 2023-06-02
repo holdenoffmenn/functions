@@ -17,6 +17,11 @@ func MapsCheck(map1, map2 map[string]string) bool {
 	return false
 }
 
+/*
+CompareMaps receives two maps that must be of the same 
+format, and checks if they are exactly the same, returning 
+a bool value.
+*/
 func CompareMaps(map1, map2 interface{}) bool {
 	if reflect.TypeOf(map1) != reflect.TypeOf(map2) {
 		return false
