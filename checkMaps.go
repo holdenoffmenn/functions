@@ -22,7 +22,7 @@ CompareMaps receives two maps that must be of the same
 format, and checks if they are exactly the same, returning
 a bool value.
 */
-func CompareMaps(map1, map2 interface{}) bool {
+func CompareMapsIFaceIFace(map1, map2 interface{}) bool {
 	if reflect.TypeOf(map1) != reflect.TypeOf(map2) {
 		return false
 	}
