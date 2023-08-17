@@ -17,6 +17,32 @@ func CompareMapsStrIFace(map1, map2 map[string]interface{}) bool {
 	return false
 }
 
+func CompareMapsStrBool(map1, map2 map[string]bool) bool {
+	if len(map1) != len(map2) {
+		return true
+	}
+	for key, val1 := range map1 {
+		val2, ok := map2[key]
+		if !ok || val1 != val2 {
+			return true
+		}
+	}
+	return false
+}
+
+func CompareMapsStrUint32(map1, map2 map[string]uint32) bool {
+	if len(map1) != len(map2) {
+		return true
+	}
+	for key, val1 := range map1 {
+		val2, ok := map2[key]
+		if !ok || val1 != val2 {
+			return true
+		}
+	}
+	return false
+}
+
 /*
 CompareMaps receives two maps that must be of the same
 format, and checks if they are exactly the same, returning
